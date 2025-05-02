@@ -1,0 +1,2 @@
+
+toggle_crusher("X");
