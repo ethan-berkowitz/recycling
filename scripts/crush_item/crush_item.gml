@@ -1,6 +1,10 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function crush_item()
 {
-	instance_destroy();
+	if (player_side = "left")
+		array_push(global.p1_items, global.items[index]);
+	else
+		array_push(global.p2_items, global.items[index]);
+	random_destruction_sound();
+	instance_destroy(); 
 }

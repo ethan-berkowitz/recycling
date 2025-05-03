@@ -8,6 +8,9 @@ if (item_counter >= item_timer)
 }
 item_counter++;
 
+if keyboard_check_pressed(ord("R"))
+	game_restart();
+
 
 
 
