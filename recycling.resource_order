@@ -17,10 +17,17 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sDefault","order":3,"path":"sprites/sDefault/sDefault.yy",},
     {"name":"oMain","order":3,"path":"objects/oMain/oMain.yy",},
     {"name":"sCrusher","order":1,"path":"sprites/sCrusher/sCrusher.yy",},
+    {"name":"macros","order":3,"path":"scripts/macros/macros.yy",},
     {"name":"oCrusherRight","order":2,"path":"objects/oCrusherRight/oCrusherRight.yy",},
+    {"name":"sPortal","order":4,"path":"sprites/sPortal/sPortal.yy",},
+    {"name":"oPortal","order":5,"path":"objects/oPortal/oPortal.yy",},
     {"name":"sMiddleLine","order":2,"path":"sprites/sMiddleLine/sMiddleLine.yy",},
+    {"name":"crush_item","order":1,"path":"scripts/crush_item/crush_item.yy",},
+    {"name":"portal_item","order":2,"path":"scripts/portal_item/portal_item.yy",},
+    {"name":"oItem","order":4,"path":"objects/oItem/oItem.yy",},
     {"name":"oCrusherLeft","order":1,"path":"objects/oCrusherLeft/oCrusherLeft.yy",},
   ],
 }
