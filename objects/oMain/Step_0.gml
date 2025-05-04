@@ -1,23 +1,25 @@
-if (item_counter >= item_timer)
-{
-	var inst1 = instance_create_layer(-64, 416, "items", oItem);
-	inst1.player_side = "left";
-	var inst2 = instance_create_layer(room_width + 64 , 416, "items", oItem);
-	inst2.player_side = "right";
-	item_counter = 0;
-}
-item_counter++;
-
 if keyboard_check_pressed(ord("R"))
 	game_restart();
 
+if (room != Main)
+	exit;
+if (item_counter >= item_timer)
+{
+	choose_item();
+	item_counter = 0;
+	item_index++;
+}
+item_counter++;
 
 
-
-
-
-
-
-
-
-
+	
+if (sync >= MAX_SYNC)
+{
+	audio_stop_all();
+	room_goto(WinRoom);
+}
+else if (chaos >= MAX_CHAOS)
+{
+	audio_stop_all();
+	room_goto(LoseRoom);
+}
