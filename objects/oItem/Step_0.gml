@@ -8,3 +8,9 @@ if (fade == false)
 	
 else
 	portal_item();
+
+if (bool_check_sync == false and fade == true)
+{
+	bool_check_sync = true;
+	check_sync("portal");
+}

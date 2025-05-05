@@ -1,2 +1,1 @@
-
-toggle_crusher("X");
+toggle_crusher("P");

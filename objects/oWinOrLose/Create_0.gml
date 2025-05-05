@@ -1,8 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
+text_chosen = false;
+text_chosen_backstop = false;
+chose_text = false;
+text = "";
+win_conditions();
 
 
 

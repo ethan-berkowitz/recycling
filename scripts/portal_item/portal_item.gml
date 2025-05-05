@@ -18,7 +18,6 @@ function portal_item()
 	image_alpha -= 0.02;
 	if (image_alpha <= 0)
 	{
-		check_sync("portal");
 		instance_destroy();
 	}
 	

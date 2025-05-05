@@ -1,9 +1,9 @@
+randomize();
+
 item_timer = ITEM_FREQUENCY;
 item_counter = item_timer;
 
 item_index = 0;
-
-
 
 global.items = [[sNorm, "Norm"],
 				[sPuppy, "Puppy"],
@@ -20,8 +20,13 @@ global.items = [[sNorm, "Norm"],
 				[sFootball, "Football"],
 				[sCoffee, "Coffee"],
 				[sPlane, "Plane"],
+				[sSanta, "Santa"],
+				[sFlowers, "Flowers"],
+				[sHappybaby, "Happybaby"],
+				[sMoney, "Money"],
+				[sBill, "Bill"],
 				[sIcecream, "Icecream"]];
-				
+
 global.p1_crushed_items = [];
 global.p2_crushed_items = [];
 
