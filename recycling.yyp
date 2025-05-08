@@ -55,7 +55,7 @@
     {"id":{"name":"aCrushActivateLeft","path":"sounds/aCrushActivateLeft/aCrushActivateLeft.yy",},},
     {"id":{"name":"sPlane","path":"sprites/sPlane/sPlane.yy",},},
     {"id":{"name":"sCrusher","path":"sprites/sCrusher/sCrusher.yy",},},
-    {"id":{"name":"win_conditions","path":"scripts/win_conditions/win_conditions.yy",},},
+    {"id":{"name":"choose_scenario","path":"scripts/choose_scenario/choose_scenario.yy",},},
     {"id":{"name":"aCrush22","path":"sounds/aCrush22/aCrush22.yy",},},
     {"id":{"name":"sBalloons","path":"sprites/sBalloons/sBalloons.yy",},},
     {"id":{"name":"sPuppy","path":"sprites/sPuppy/sPuppy.yy",},},

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "win_conditions",
+  "name": "choose_scenario",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -36,7 +36,7 @@
     {"name":"LoseRoom","order":3,"path":"rooms/LoseRoom/LoseRoom.yy",},
     {"name":"sPlane","order":22,"path":"sprites/sPlane/sPlane.yy",},
     {"name":"sCrusher","order":1,"path":"sprites/sCrusher/sCrusher.yy",},
-    {"name":"win_conditions","order":8,"path":"scripts/win_conditions/win_conditions.yy",},
+    {"name":"choose_scenario","order":8,"path":"scripts/choose_scenario/choose_scenario.yy",},
     {"name":"aCrush22","order":22,"path":"sounds/aCrush22/aCrush22.yy",},
     {"name":"sBalloons","order":20,"path":"sprites/sBalloons/sBalloons.yy",},
     {"name":"sPuppy","order":6,"path":"sprites/sPuppy/sPuppy.yy",},
