@@ -2,6 +2,7 @@ randomize();
 
 item_timer = ITEM_FREQUENCY;
 item_counter = item_timer;
+mute = false;
 
 item_index = 0;
 

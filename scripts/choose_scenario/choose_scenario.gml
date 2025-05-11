@@ -14,6 +14,8 @@ function choose_scenario()
 	found_modernart = ds_map_exists(found_items, "Modernart");
 	found_bomb = ds_map_exists(found_items, "Bomb");
 	found_sadbaby = ds_map_exists(found_items, "Sadbaby");
+	found_happybaby = ds_map_exists(found_items, "Happybaby");
+	found_bill = ds_map_exists(found_items, "Bill");
 	found_curse = ds_map_exists(found_items, "Curse");
 	found_plane = ds_map_exists(found_items, "Plane");
 	found_norm = ds_map_exists(found_items, "Norm");
@@ -23,7 +25,7 @@ function choose_scenario()
 
 	ds_map_destroy(found_items);
 
-	var all_scenarios = [
+	var win_scenarios = [
 	    [found_balloons && found_puppy,
 	     "You wanted both balloons and dogs to exist in your new utopia. Dogs view balloons as their mortal enemy, so they started a war with the balloons, which claimed many victims, both soldiers and civilians, and ultimately the balloons won. Your utopia is now a post-war society with generational trauma."],
      
@@ -47,25 +49,67 @@ function choose_scenario()
      
 	    [found_flowers && found_thoughtbubble,
 	     "You saved thoughts and flowers to have in your utopia, you hippie! Peace out!"],
+		 
+	    [found_bill && found_curse,
+	     "You saved Bill the Pony and swear words. Bill is sturdy and pure of heart. He also carries heavy loads without complaining. DO NOT USE FOUL LANGUAGE AROUND SUCH A NOBLE AND MAJESTIC CREATURE!"],
+		 
+	    [found_happybaby && found_plane,
+	     "Your utopia has happy babies and airplanes. Babies are not very good at flying airplanes. The air traffic in your utopia is a mess, but at least the pilots are happy!"],
+		 
+	    [!found_sadbaby && found_happybaby,
+	     "Your utopia has only babies who are happy. They never learn to regulate their emotions and grow up to be deeply anxious and mentally ill adults. Where are the therapists??"],
+
+	    [found_flowers && found_coffee,
+	     "Your utopia is coffee and flowers galore. It has never been easier to figure out what to do on a date. Romance blooms <3 Congratulations you little Cupids!"],
      
 	    [found_santa && found_money,
 	     "Your utopia has money and Santa Claus. Santa started to get greedy since many people were throwing money at him to bring them presents. Santa created a sweatshop and exploits its workers. Santa has become the richest man in your utopia and he will never stop wanting more money."]
+	
+	
+	
+	];
+	
+	var lose_scenarios = [
+	    [!found_poop,
+	     "Your utopia doesn't have poo. Nobody poops. Everyone dies of constipation. Well done."],
+		 
+	    [!found_norm,
+	     "NORMINETTE IS GONE!!! THIS TRULY IS A UTOPIA!! <3<3<3"],
+		 
+	    [found_norm,
+	     "You let Norminette enter your utopia. I don't think you were ever even going to create a utopia. You are the devil :("],
+
+	    [true,
+	     "You failed to create a utopia. Typical humans. Enjoy the apocalypse."],
+
+	    [!found_thoughtbubble,
+	     "Your utopia has no thoughts. Everyone lives on instincts. Some would argue that this is the most blissful state of being, but in this utopia they wouldn't, since they don't have thoughts to form this opinion."]
 	];
 	
 	var regular_arr = [];
-	for (var i = 0; i < array_length(all_scenarios); i++) {
-	    if (all_scenarios[i][0]) {
-	        array_push(regular_arr, all_scenarios[i][1]);
+	for (var i = 0; i < array_length(win_scenarios); i++) {
+	    if (win_scenarios[i][0]) {
+	        array_push(regular_arr, win_scenarios[i][1]);
 	    }
 	}
-
-	var i = 0;
-	var len = array_length(regular_arr);
-	if (len > 0 && text_chosen == false) {
-	    text_chosen = true;
-	    i = irandom(len - 1);
+	var backup_arr = [];
+	for (var i = 0; i < array_length(lose_scenarios); i++) {
+	    if (lose_scenarios[i][0]) {
+	        array_push(backup_arr, lose_scenarios[i][1]);
+	    }
 	}
-	if (len > 0) {
-	    text = regular_arr[i];
+	var regular_len = array_length(regular_arr);
+	var backup_len = array_length(backup_arr);
+	if (regular_len > 0)
+	{
+	    var random_int = irandom(regular_len - 1);
+		return (regular_arr[random_int]);
 	}
+	else if (backup_len > 0)
+	{
+	    var random_int = irandom(backup_len - 1);
+		return (backup_arr[random_int]);
+	}
+	else
+		return ("An error occured. It's probably your fault.");
 }

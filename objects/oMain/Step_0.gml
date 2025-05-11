@@ -1,5 +1,13 @@
+if (mute == true)
+	audio_master_gain(0);
+else
+	audio_master_gain(1);
+
 if keyboard_check_pressed(ord("R"))
 	game_restart();
+if keyboard_check_pressed(ord("M"))
+	mute = true;
+
 
 if (room != Main)
 	exit;

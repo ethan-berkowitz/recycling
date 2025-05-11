@@ -59,6 +59,7 @@
     {"id":{"name":"aCrush22","path":"sounds/aCrush22/aCrush22.yy",},},
     {"id":{"name":"sBalloons","path":"sprites/sBalloons/sBalloons.yy",},},
     {"id":{"name":"sPuppy","path":"sprites/sPuppy/sPuppy.yy",},},
+    {"id":{"name":"sItchTitle","path":"sprites/sItchTitle/sItchTitle.yy",},},
     {"id":{"name":"init_sounds","path":"scripts/init_sounds/init_sounds.yy",},},
     {"id":{"name":"aCrush15","path":"sounds/aCrush15/aCrush15.yy",},},
     {"id":{"name":"fDefault","path":"fonts/fDefault/fDefault.yy",},},
@@ -132,11 +133,11 @@
     {"id":{"name":"Main","path":"rooms/Main/Main.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"ClickToStart","path":"rooms/ClickToStart/ClickToStart.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"WinRoom","path":"rooms/WinRoom/WinRoom.yy",},},
     {"roomId":{"name":"LoseRoom","path":"rooms/LoseRoom/LoseRoom.yy",},},
+    {"roomId":{"name":"ClickToStart","path":"rooms/ClickToStart/ClickToStart.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
