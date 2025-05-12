@@ -1,5 +1,5 @@
 if (mute == true)
-	audio_master_gain(0);
+	audio_stop_sound(aMainMusic);
 else
 	audio_master_gain(1);
 

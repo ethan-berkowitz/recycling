@@ -37,8 +37,12 @@ sync = 0;
 chaos = 0;
 
 global.item_destruction = [];
+global.item_immediate = [];
 for (var i = 0; i < 100; i++)
+{
     global.item_destruction[i] = undefined;
+	global.item_immediate[i] = undefined;
+}
 	
 init_sounds();
 

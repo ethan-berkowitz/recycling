@@ -33,7 +33,7 @@ function choose_scenario()
 	     "Your utopia has loads of thoughts and coffee! As drinking lots of coffee makes thoughts run wild, your utopia now suffers from caffeine-induced anxiety."],
      
 	    [found_modernart && found_bomb,
-	     "You saved your utopia from modern art and bombs! Phew! Unfortunately, now nobody has anything meaningful to tinker with, so everyone becomes idle and bored and start gossiping about each other, creating a paranoid atmosphere to this utopia."],
+	     "You saved your utopia from modern art and bombs! Phew! Unfortunately, now nobody has anything meaningful to tinker with, so everyone becomes idle and bored and starts gossiping about each other, creating a paranoid atmosphere to this utopia."],
      
 	    [found_sadbaby && found_puppy,
 	     "You saved dogs and crying babies to live in your utopia, how big-hearted of you <3 those two drove each other insane by barking and crying and everyone's heads exploded."],
