@@ -14,7 +14,7 @@ function check_sync(destruction_type)
 		}
 	    else
 		{
-			audio_play_sound(aDesyncSound, 1, 0, DESYNC_GAIN);
+			audio_play_sound(aPortalUnsync, 1, 0);
 	        oMain.chaos++;
 		}
 	}

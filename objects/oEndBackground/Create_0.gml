@@ -1,1 +1,1 @@
-audio_play_sound(aWinMusic, 1, 0, WIN_MUSIC_GAIN);
+audio_play_sound(aWinMusic, 1, 0);

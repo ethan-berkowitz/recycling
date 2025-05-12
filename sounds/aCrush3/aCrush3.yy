@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 3.625,
+  "duration": 1.008,
   "parent": {
-    "name": "crush_sounds",
-    "path": "folders/Sounds/crush_sounds.yy",
+    "name": "common_crush",
+    "path": "folders/Sounds/common_crush.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "aCrush3.wav",
+  "soundFile": "aCrush3.mp3",
   "type": 0,
   "volume": 1.0,
 }

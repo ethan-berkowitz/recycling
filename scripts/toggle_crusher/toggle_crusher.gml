@@ -5,8 +5,8 @@ function toggle_crusher(input)
 	{
 		crush = true;
 		
-		var crush_volume = 0.1; //0.8
-		var crush_volume_alt = 0.1; //0.4
+		var crush_volume = 1;
+		var crush_volume_alt = 0.5;
 		
 		if (input == "Z")
 		{

@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 2.25,
+  "duration": 2.016,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "aPortalSync.wav",
+  "soundFile": "aPortalSync.mp3",
   "type": 0,
   "volume": 1.0,
 }
